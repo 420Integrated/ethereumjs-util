@@ -1,4 +1,4 @@
-[ethereumjs-util](../README.md) › ["types"](_types_.md)
+[fourtwentyjs-util](../README.md) › ["types"](_types_.md)
 
 # Module: "types"
 
@@ -25,7 +25,7 @@
 
 Ƭ **BNLike**: *BN | string | number*
 
-*Defined in [types.ts:7](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/types.ts#L7)*
+*Defined in [types.ts:7](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/types.ts#L7)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 Ƭ **BufferLike**: *Buffer | Uint8Array | number[] | number | BN | [TransformableToBuffer](../interfaces/_types_.transformabletobuffer.md) | [PrefixedHexString](_types_.md#prefixedhexstring)*
 
-*Defined in [types.ts:12](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/types.ts#L12)*
+*Defined in [types.ts:12](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/types.ts#L12)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 Ƭ **PrefixedHexString**: *string*
 
-*Defined in [types.ts:24](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/types.ts#L24)*
+*Defined in [types.ts:24](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/types.ts#L24)*
 
 ## Functions
 
@@ -49,7 +49,7 @@ ___
 
 ▸ **bnToRlp**(`value`: BN): *Buffer*
 
-*Defined in [types.ts:46](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/types.ts#L46)*
+*Defined in [types.ts:46](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/types.ts#L46)*
 
 Convert value from BN to RLP (unpadded buffer)
 
