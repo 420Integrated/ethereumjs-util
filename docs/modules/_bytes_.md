@@ -1,4 +1,4 @@
-[ethereumjs-util](../README.md) › ["bytes"](_bytes_.md)
+[fourtwentyjs-util](../README.md) › ["bytes"](_bytes_.md)
 
 # Module: "bytes"
 
@@ -26,7 +26,7 @@
 
 ▸ **addHexPrefix**(`str`: string): *string*
 
-*Defined in [bytes.ts:204](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/bytes.ts#L204)*
+*Defined in [bytes.ts:204](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/bytes.ts#L204)*
 
 Adds "0x" to a given `String` if it does not already start with "0x".
 
@@ -44,7 +44,7 @@ ___
 
 ▸ **baToJSON**(`ba`: any): *any*
 
-*Defined in [bytes.ts:217](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/bytes.ts#L217)*
+*Defined in [bytes.ts:217](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/bytes.ts#L217)*
 
 Converts a `Buffer` or `Array` to JSON.
 
@@ -64,7 +64,7 @@ ___
 
 ▸ **bufferToHex**(`buf`: Buffer): *string*
 
-*Defined in [bytes.ts:180](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/bytes.ts#L180)*
+*Defined in [bytes.ts:180](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/bytes.ts#L180)*
 
 Converts a `Buffer` into a `0x`-prefixed hex `String`.
 
@@ -82,7 +82,7 @@ ___
 
 ▸ **bufferToInt**(`buf`: Buffer): *number*
 
-*Defined in [bytes.ts:172](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/bytes.ts#L172)*
+*Defined in [bytes.ts:172](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/bytes.ts#L172)*
 
 Converts a `Buffer` to a `Number`.
 
@@ -100,7 +100,7 @@ ___
 
 ▸ **fromSigned**(`num`: Buffer): *BN*
 
-*Defined in [bytes.ts:189](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/bytes.ts#L189)*
+*Defined in [bytes.ts:189](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/bytes.ts#L189)*
 
 Interprets a `Buffer` as a signed integer and returns a `BN`. Assumes 256-bit numbers.
 
@@ -118,7 +118,7 @@ ___
 
 ▸ **setLengthLeft**(`msg`: Buffer, `length`: number): *Buffer‹›*
 
-*Defined in [bytes.ts:21](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/bytes.ts#L21)*
+*Defined in [bytes.ts:21](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/bytes.ts#L21)*
 
 Left Pads a `Buffer` with leading zeros till it has `length` bytes.
 Or it truncates the beginning if it exceeds.
@@ -140,7 +140,7 @@ ___
 
 ▸ **setLengthRight**(`msg`: Buffer, `length`: number): *Buffer‹›*
 
-*Defined in [bytes.ts:33](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/bytes.ts#L33)*
+*Defined in [bytes.ts:33](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/bytes.ts#L33)*
 
 Right Pads a `Buffer` with trailing zeros till it has `length` bytes.
 it truncates the end if it exceeds.
@@ -162,7 +162,7 @@ ___
 
 ▸ **toBuffer**(`v`: string | number | BN | Buffer | Uint8Array | number[] | [TransformableToArray](../interfaces/_types_.transformabletoarray.md) | [TransformableToBuffer](../interfaces/_types_.transformabletobuffer.md) | null | undefined): *Buffer*
 
-*Defined in [bytes.ts:113](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/bytes.ts#L113)*
+*Defined in [bytes.ts:113](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/bytes.ts#L113)*
 
 Attempts to turn a value into a `Buffer`.
 Inputs supported: `Buffer`, `String`, `Number`, null/undefined, `BN` and other objects with a `toArray()` or `toBuffer()` method.
@@ -181,7 +181,7 @@ ___
 
 ▸ **toUnsigned**(`num`: BN): *Buffer*
 
-*Defined in [bytes.ts:197](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/bytes.ts#L197)*
+*Defined in [bytes.ts:197](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/bytes.ts#L197)*
 
 Converts a `BN` to an unsigned integer and returns it as a `Buffer`. Assumes 256-bit numbers.
 
@@ -199,7 +199,7 @@ ___
 
 ▸ **unpadArray**(`a`: number[]): *number[]*
 
-*Defined in [bytes.ts:78](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/bytes.ts#L78)*
+*Defined in [bytes.ts:78](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/bytes.ts#L78)*
 
 Trims leading zeros from an `Array` (of numbers).
 
@@ -219,7 +219,7 @@ ___
 
 ▸ **unpadBuffer**(`a`: Buffer): *Buffer*
 
-*Defined in [bytes.ts:68](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/bytes.ts#L68)*
+*Defined in [bytes.ts:68](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/bytes.ts#L68)*
 
 Trims leading zeros from a `Buffer`.
 
@@ -239,7 +239,7 @@ ___
 
 ▸ **unpadHexString**(`a`: string): *string*
 
-*Defined in [bytes.ts:88](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/bytes.ts#L88)*
+*Defined in [bytes.ts:88](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/bytes.ts#L88)*
 
 Trims leading zeros from a hex-prefixed `String`.
 
@@ -259,7 +259,7 @@ ___
 
 ▸ **zeros**(`bytes`: number): *Buffer*
 
-*Defined in [bytes.ts:10](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/bytes.ts#L10)*
+*Defined in [bytes.ts:10](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/bytes.ts#L10)*
 
 Returns a buffer filled with 0s.
 
