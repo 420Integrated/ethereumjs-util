@@ -1,7 +1,7 @@
 import * as assert from 'assert'
 import * as BN from 'bn.js'
 import * as rlp from 'rlp'
-import { stripHexPrefix } from 'ethjs-util'
+import { stripHexPrefix } from 'fourtwozerojs-util'
 import { KECCAK256_RLP, KECCAK256_NULL } from './constants'
 import { zeros, bufferToHex, toBuffer } from './bytes'
 import { keccak, keccak256, keccakFromString, rlphash } from './hash'
@@ -13,7 +13,7 @@ const {
   publicKeyCreate,
   publicKeyVerify,
   publicKeyConvert,
-} = require('ethereum-cryptography/secp256k1')
+} = require('fourtwenty-cryptography/secp256k1')
 
 export interface AccountData {
   nonce?: BNLike
@@ -139,8 +139,6 @@ export const isValidAddress = function(hexAddress: string): boolean {
  * has the effect of checksummed addresses for one chain having invalid checksums for others.
  * For more details see [EIP-1191](https://eips.ethereum.org/EIPS/eip-1191).
  *
- * WARNING: Checksums with and without the chainId will differ. As of 2019-06-26, the most commonly
- * used variation in Ethereum was without the chainId. This may change in the future.
  */
 export const toChecksumAddress = function(hexAddress: string, eip1191ChainId?: number): string {
   assertIsHexString(hexAddress)
@@ -224,7 +222,7 @@ export const isValidPrivate = function(privateKey: Buffer): boolean {
 
 /**
  * Checks if the public key satisfies the rules of the curve secp256k1
- * and the requirements of Ethereum.
+ * and the requirements of 420coin.
  * @param publicKey The two points of an uncompressed key, unless sanitize is enabled
  * @param sanitize Accept public keys in other formats
  */
@@ -243,8 +241,8 @@ export const isValidPublic = function(publicKey: Buffer, sanitize: boolean = fal
 }
 
 /**
- * Returns the ethereum address of a given public key.
- * Accepts "Ethereum public keys" and SEC1 encoded keys.
+ * Returns the 420coin address of a given public key.
+ * Accepts "420coin public keys" and SEC1 encoded keys.
  * @param pubKey The two points of an uncompressed key, unless sanitize is enabled
  * @param sanitize Accept public keys in other formats
  */
@@ -260,7 +258,7 @@ export const pubToAddress = function(pubKey: Buffer, sanitize: boolean = false):
 export const publicToAddress = pubToAddress
 
 /**
- * Returns the ethereum address of a given private key.
+ * Returns the 420coin address of a given private key.
  * @param privateKey A private key must be 256 bits wide
  */
 export const privateToAddress = function(privateKey: Buffer): Buffer {
@@ -268,7 +266,7 @@ export const privateToAddress = function(privateKey: Buffer): Buffer {
 }
 
 /**
- * Returns the ethereum public key of a given private key.
+ * Returns the 420coin public key of a given private key.
  * @param privateKey A private key must be 256 bits wide
  */
 export const privateToPublic = function(privateKey: Buffer): Buffer {
@@ -278,7 +276,7 @@ export const privateToPublic = function(privateKey: Buffer): Buffer {
 }
 
 /**
- * Converts a public key to the Ethereum format.
+ * Converts a public key to the 420coin format.
  */
 export const importPublic = function(publicKey: Buffer): Buffer {
   assertIsBuffer(publicKey)
