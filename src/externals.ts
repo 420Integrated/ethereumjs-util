@@ -1,6 +1,6 @@
 /**
  * Re-exports commonly used modules:
- * * Exports [`BN`](https://github.com/indutny/bn.js), [`rlp`](https://github.com/ethereumjs/rlp).
+ * * Exports [`BN`](https://github.com/indutny/bn.js), [`rlp`](https://github.com/420integrated/fourtwentyjs/rlp).
  * @packageDocumentation
  */
 
@@ -16,6 +16,6 @@ import rlp = require('rlp')
 export { BN }
 
 /**
- * [`rlp`](https://github.com/ethereumjs/rlp)
+ * [`rlp`](https://github.com/420integrated/fourtwentyjs/rlp)
  */
 export { rlp }
