@@ -320,7 +320,7 @@ describe('isValidPublic', function() {
 describe('importPublic', function() {
   const pubKey =
     '3a443d8381a6798a70c6ff9304bdc8cb0163c23211d11628fae52ef9e0dca11a001cf066d56a8156fc201cd5df8a36ef694eecd258903fca7086c1fae7441e1d'
-  it('should work with an Ethereum public key', function() {
+  it('should work with an 420coin public key', function() {
     const tmp =
       '3a443d8381a6798a70c6ff9304bdc8cb0163c23211d11628fae52ef9e0dca11a001cf066d56a8156fc201cd5df8a36ef694eecd258903fca7086c1fae7441e1d'
     assert.equal(importPublic(Buffer.from(tmp, 'hex')).toString('hex'), pubKey)
