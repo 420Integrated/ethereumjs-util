@@ -48,9 +48,9 @@ assert.equal(new BN('dead', 16).add(new BN('101010', 2)), 57047)
   - Helper methods from `ethjs-util`
   - Re-exports of `BN`, `rlp`
 
-### ftzjs-util methods
+### fourtwozerojs-util methods
 
-The following methods are available provided by [ftzjs-util](https://github.com/420integrated/ftzjs-util):
+The following methods are available provided by [fourtwozerojs-util](https://github.com/420integrated/fourtwozerojs-util):
 
 - arrayContainsArray
 - toBuffer
