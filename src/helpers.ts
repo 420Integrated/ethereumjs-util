@@ -1,4 +1,4 @@
-import { isHexString } from 'ethjs-util'
+import { isHexString } from 'fourtwozerojs-util'
 
 /**
  * Throws if a string is not hex prefixed
