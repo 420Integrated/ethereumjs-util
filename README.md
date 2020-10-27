@@ -1,21 +1,16 @@
 # SYNOPSIS
 
-[![NPM Package](https://img.shields.io/npm/v/ethereumjs-util.svg)](https://www.npmjs.org/package/ethereumjs-util)
-[![Actions Status](https://github.com/ethereumjs/ethereumjs-util/workflows/Build/badge.svg)](https://github.com/ethereumjs/ethereumjs-util/actions)
-[![Coverage Status](https://img.shields.io/coveralls/ethereumjs/ethereumjs-util.svg)](https://coveralls.io/r/ethereumjs/ethereumjs-util)
-[![Discord][discord-badge]][discord-link]
-
-A collection of utility functions for Ethereum. It can be used in Node.js and in the browser with [browserify](http://browserify.org/).
+A collection of utility functions for 420coin. It can be used in Node.js and in the browser with [browserify](http://browserify.org/).
 
 # INSTALL
 
-`npm install ethereumjs-util`
+`npm install fourtwentyjs-util`
 
 # USAGE
 
 ```js
 import assert from 'assert'
-import { isValidChecksumAddress, unpadBuffer, BN } from 'ethereumjs-util'
+import { isValidChecksumAddress, unpadBuffer, BN } from 'fourtwentyjs-util'
 
 const address = '0x2F015C60E0be116B1f0CD534704Db9c92118FB6A'
 assert.ok(isValidChecksumAddress(address))
@@ -53,9 +48,9 @@ assert.equal(new BN('dead', 16).add(new BN('101010', 2)), 57047)
   - Helper methods from `ethjs-util`
   - Re-exports of `BN`, `rlp`
 
-### ethjs-util methods
+### ftzjs-util methods
 
-The following methods are available provided by [ethjs-util](https://github.com/ethjs/ethjs-util):
+The following methods are available provided by [ftzjs-util](https://github.com/420integrated/ftzjs-util):
 
 - arrayContainsArray
 - toBuffer
@@ -74,21 +69,19 @@ The following methods are available provided by [ethjs-util](https://github.com/
 Import can be done directly by function name analogous to the build-in function import:
 
 ```js
-import { intToHex, stripHexPrefix } from 'ethereumjs-util'
+import { intToHex, stripHexPrefix } from 'fourtwentyjs-util'
 ```
 
 ### Re-Exports
 
-Additionally `ethereumjs-util` re-exports a few commonly-used libraries. These include:
+Additionally `fourtwentyjs-util` re-exports a few commonly-used libraries. These include:
 
 - [BN.js](https://github.com/indutny/bn.js) (version `5.x`)
 - [rlp](https://github.com/ethereumjs/rlp) (version `2.x`)
 
-# EthereumJS
+# FourtwentyJS
 
-See our organizational [documentation](https://ethereumjs.readthedocs.io) for an introduction to `EthereumJS` as well as information on current standards and best practices.
-
-If you want to join for work or do improvements on the libraries have a look at our [contribution guidelines](https://ethereumjs.readthedocs.io/en/latest/contributing.html).
+See our organizational [documentation](https://420integrated.com/wiki/fourtwentyjs) for an introduction to `FourtwentyJS` as well as information on current standards and best practices.
 
 # LICENSE
 
