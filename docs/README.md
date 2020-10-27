@@ -1,12 +1,12 @@
-[ethereumjs-util](README.md)
+[fourtwentyjs-util](README.md)
 
-# ethereumjs-util
+# fourtwentyjs-util
 
 ## Index
 
 ### Modules
 
-* ["@types/ethjs-util/index"](modules/__types_ethjs_util_index_.md)
+* ["@types/ftzjs-util/index"](modules/__types_ftzjs_util_index_.md)
 * ["account"](modules/_account_.md)
 * ["address"](modules/_address_.md)
 * ["bytes"](modules/_bytes_.md)
