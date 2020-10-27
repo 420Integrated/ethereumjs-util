@@ -1,7 +1,7 @@
 {
-  "name": "ethereumjs-util",
+  "name": "fourtwentyjs-util",
   "version": "7.0.7",
-  "description": "a collection of utility functions for Ethereum",
+  "description": "a collection of utility functions for 420coin",
   "main": "dist/index.js",
   "types": "./dist/index.d.ts",
   "engines": {
@@ -11,19 +11,19 @@
     "dist"
   ],
   "scripts": {
-    "build": "ethereumjs-config-build",
+    "build": "fourtwentyjs-config-build",
     "prepublishOnly": "npm run test && npm run build",
     "docs:build": "npx typedoc --options typedoc.js",
-    "format": "ethereumjs-config-format",
-    "format:fix": "ethereumjs-config-format-fix",
-    "lint": "ethereumjs-config-lint",
-    "lint:fix": "ethereumjs-config-lint-fix",
+    "format": "fourtwentyjs-config-format",
+    "format:fix": "fourtwentyjs-config-format-fix",
+    "lint": "fourtwentyjs-config-lint",
+    "lint:fix": "fourtwentyjs-config-lint-fix",
     "test": "npm run lint && npm run test:node && npm run test:browser",
     "test:browser": "karma start karma.conf.js",
     "test:node": "nyc --reporter=lcov mocha --require ts-node/register 'test/*.spec.ts'",
-    "tsc": "ethereumjs-config-tsc",
-    "tslint": "ethereumjs-config-tslint",
-    "tslint:fix": "ethereumjs-config-tslint-fix"
+    "tsc": "fourtwentyjs-config-tsc",
+    "tslint": "fourtwentyjs-config-tslint",
+    "tslint:fix": "fourtwentyjs-config-tslint-fix"
   },
   "husky": {
     "hooks": {
@@ -32,10 +32,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ethereumjs/ethereumjs-util.git"
+    "url": "https://github.com/420integrated/fourtwentyjs-util.git"
   },
   "keywords": [
-    "ethereum",
+    "420coin",
     "utilties"
   ],
   "author": "mjbecze <mjbecze@gmail.com>",
@@ -85,21 +85,21 @@
   ],
   "license": "MPL-2.0",
   "bugs": {
-    "url": "https://github.com/ethereumjs/ethereumjs-util/issues"
+    "url": "https://github.com/420integrated/fourtwentyjs-util/issues"
   },
-  "homepage": "https://github.com/ethereumjs/ethereumjs-util",
+  "homepage": "https://github.com/420integrated/fourtwentyjs-util",
   "dependencies": {
     "@types/bn.js": "^4.11.3",
     "bn.js": "^5.1.2",
     "create-hash": "^1.1.2",
-    "ethereum-cryptography": "^0.1.3",
-    "ethjs-util": "0.1.6",
+    "fourtwenty-cryptography": "^0.1.3",
+    "fourtwozerojs-util": "0.1.6",
     "rlp": "^2.2.4"
   },
   "devDependencies": {
-    "@ethereumjs/config-prettier": "^1.1.0",
-    "@ethereumjs/config-tsc": "^1.1.0",
-    "@ethereumjs/config-tslint": "^1.1.0",
+    "@fourtwentyjs/config-prettier": "^1.1.0",
+    "@fourtwentyjs/config-tsc": "^1.1.0",
+    "@fourtwentyjs/config-tslint": "^1.1.0",
     "@types/mocha": "^5.2.7",
     "@types/node": "^11.9.0",
     "@types/secp256k1": "^4.0.1",
