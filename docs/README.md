@@ -6,7 +6,7 @@
 
 ### Modules
 
-* ["@types/ftzjs-util/index"](modules/__types_ftzjs_util_index_.md)
+* ["@types/fourtwozerojs-util/index"](modules/__types_fourtwozerojs_util_index_.md)
 * ["account"](modules/_account_.md)
 * ["address"](modules/_address_.md)
 * ["bytes"](modules/_bytes_.md)
