@@ -1,4 +1,4 @@
-[ethereumjs-util](../README.md) › ["types"](../modules/_types_.md) › [TransformableToArray](_types_.transformabletoarray.md)
+[fourtwentyjs-util](../README.md) › ["types"](../modules/_types_.md) › [TransformableToArray](_types_.transformabletoarray.md)
 
 # Interface: TransformableToArray
 
@@ -19,7 +19,7 @@
 
 ▸ **toArray**(): *Uint8Array*
 
-*Defined in [types.ts:30](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/types.ts#L30)*
+*Defined in [types.ts:30](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/types.ts#L30)*
 
 **Returns:** *Uint8Array*
 
@@ -29,6 +29,6 @@ ___
 
 ▸ **toBuffer**(): *Buffer*
 
-*Defined in [types.ts:31](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/types.ts#L31)*
+*Defined in [types.ts:31](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/types.ts#L31)*
 
 **Returns:** *Buffer*
