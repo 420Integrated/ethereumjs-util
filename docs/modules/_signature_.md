@@ -1,4 +1,4 @@
-[ethereumjs-util](../README.md) › ["signature"](_signature_.md)
+[fourtwentyjs-util](../README.md) › ["signature"](_signature_.md)
 
 # Module: "signature"
 
@@ -23,7 +23,7 @@
 
 ▸ **ecrecover**(`msgHash`: Buffer, `v`: number, `r`: Buffer, `s`: Buffer, `chainId?`: undefined | number): *Buffer*
 
-*Defined in [signature.ts:37](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/signature.ts#L37)*
+*Defined in [signature.ts:37](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/signature.ts#L37)*
 
 ECDSA public key recovery from signature.
 
@@ -47,7 +47,7 @@ ___
 
 ▸ **ecsign**(`msgHash`: Buffer, `privateKey`: Buffer, `chainId?`: undefined | number): *[ECDSASignature](../interfaces/_signature_.ecdsasignature.md)*
 
-*Defined in [signature.ts:16](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/signature.ts#L16)*
+*Defined in [signature.ts:16](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/signature.ts#L16)*
 
 Returns the ECDSA signature of a message hash.
 
@@ -67,10 +67,10 @@ ___
 
 ▸ **fromRpcSig**(`sig`: string): *[ECDSASignature](../interfaces/_signature_.ecdsasignature.md)*
 
-*Defined in [signature.ts:71](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/signature.ts#L71)*
+*Defined in [signature.ts:71](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/signature.ts#L71)*
 
-Convert signature format of the `eth_sign` RPC method to signature parameters
-NOTE: all because of a bug in geth: https://github.com/ethereum/go-ethereum/issues/2053
+Convert signature format of the `fourtwenty_sign` RPC method to signature parameters
+NOTE: all because of a bug in g420: https://github.com/420integrated/go-420coin/issues/2053
 
 **Parameters:**
 
@@ -86,10 +86,10 @@ ___
 
 ▸ **hashPersonalMessage**(`message`: Buffer): *Buffer*
 
-*Defined in [signature.ts:137](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/signature.ts#L137)*
+*Defined in [signature.ts:137](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/signature.ts#L137)*
 
-Returns the keccak-256 hash of `message`, prefixed with the header used by the `eth_sign` RPC call.
-The output of this function can be fed into `ecsign` to produce the same signature as the `eth_sign`
+Returns the keccak-256 hash of `message`, prefixed with the header used by the `fourtwenty_sign` RPC call.
+The output of this function can be fed into `ecsign` to produce the same signature as the `fourtwenty_sign`
 call for a given `message`, or fed to `ecrecover` along with a signature to recover the public key
 used to produce the signature.
 
@@ -107,7 +107,7 @@ ___
 
 ▸ **isValidSignature**(`v`: number, `r`: Buffer, `s`: Buffer, `homesteadOrLater`: boolean, `chainId?`: undefined | number): *boolean*
 
-*Defined in [signature.ts:96](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/signature.ts#L96)*
+*Defined in [signature.ts:96](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/signature.ts#L96)*
 
 Validate a ECDSA signature.
 
@@ -129,9 +129,9 @@ ___
 
 ▸ **toRpcSig**(`v`: number, `r`: Buffer, `s`: Buffer, `chainId?`: undefined | number): *string*
 
-*Defined in [signature.ts:57](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/signature.ts#L57)*
+*Defined in [signature.ts:57](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/signature.ts#L57)*
 
-Convert signature parameters into the format of `eth_sign` RPC method.
+Convert signature parameters into the format of `fourtwenty_sign` RPC method.
 
 **Parameters:**
 
