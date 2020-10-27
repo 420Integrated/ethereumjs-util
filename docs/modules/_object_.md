@@ -1,4 +1,4 @@
-[ethereumjs-util](../README.md) › ["object"](_object_.md)
+[fourtwentyjs-util](../README.md) › ["object"](_object_.md)
 
 # Module: "object"
 
@@ -14,7 +14,7 @@
 
 ▸ **defineProperties**(`self`: any, `fields`: any, `data?`: any): *void*
 
-*Defined in [object.ts:17](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/object.ts#L17)*
+*Defined in [object.ts:17](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/object.ts#L17)*
 
 Defines properties on a `Object`. It make the assumption that underlying data is binary.
 
