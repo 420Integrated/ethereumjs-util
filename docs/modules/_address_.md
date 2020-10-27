@@ -1,4 +1,4 @@
-[ethereumjs-util](../README.md) › ["address"](_address_.md)
+[fourtwentyjs-util](../README.md) › ["address"](_address_.md)
 
 # Module: "address"
 
