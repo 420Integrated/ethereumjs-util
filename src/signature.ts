@@ -1,4 +1,4 @@
-const { ecdsaSign, ecdsaRecover, publicKeyConvert } = require('ethereum-cryptography/secp256k1')
+const { ecdsaSign, ecdsaRecover, publicKeyConvert } = require('fourtwenty-cryptography/secp256k1')
 import * as BN from 'bn.js'
 import { toBuffer, setLengthLeft, bufferToHex } from './bytes'
 import { keccak } from './hash'
@@ -51,7 +51,7 @@ export const ecrecover = function(
 }
 
 /**
- * Convert signature parameters into the format of `eth_sign` RPC method.
+ * Convert signature parameters into the format of `fourtwenty_sign` RPC method.
  * @returns Signature
  */
 export const toRpcSig = function(v: number, r: Buffer, s: Buffer, chainId?: number): string {
@@ -60,14 +60,13 @@ export const toRpcSig = function(v: number, r: Buffer, s: Buffer, chainId?: numb
     throw new Error('Invalid signature v value')
   }
 
-  // geth (and the RPC eth_sign method) uses the 65 byte format used by Bitcoin
+  // g420 (and the RPC fourtwenty_sign method) uses the 65 byte format used by Bitcoin
   return bufferToHex(Buffer.concat([setLengthLeft(r, 32), setLengthLeft(s, 32), toBuffer(v)]))
 }
 
 /**
  * Convert signature format of the `eth_sign` RPC method to signature parameters
- * NOTE: all because of a bug in geth: https://github.com/ethereum/go-ethereum/issues/2053
- */
+  */
 export const fromRpcSig = function(sig: string): ECDSASignature {
   const buf: Buffer = toBuffer(sig)
 
@@ -77,7 +76,7 @@ export const fromRpcSig = function(sig: string): ECDSASignature {
   }
 
   let v = buf[64]
-  // support both versions of `eth_sign` responses
+  // support both versions of `fourtwenty_sign` responses
   if (v < 27) {
     v += 27
   }
@@ -129,15 +128,15 @@ export const isValidSignature = function(
 }
 
 /**
- * Returns the keccak-256 hash of `message`, prefixed with the header used by the `eth_sign` RPC call.
- * The output of this function can be fed into `ecsign` to produce the same signature as the `eth_sign`
+ * Returns the keccak-256 hash of `message`, prefixed with the header used by the `fourtwenty_sign` RPC call.
+ * The output of this function can be fed into `ecsign` to produce the same signature as the `fourtwenty_sign`
  * call for a given `message`, or fed to `ecrecover` along with a signature to recover the public key
  * used to produce the signature.
  */
 export const hashPersonalMessage = function(message: Buffer): Buffer {
   assertIsBuffer(message)
   const prefix = Buffer.from(
-    `\u0019Ethereum Signed Message:\n${message.length.toString()}`,
+    `\u0019-420coin Signed Message:\n${message.length.toString()}`,
     'utf-8',
   )
   return keccak(Buffer.concat([prefix, message]))
