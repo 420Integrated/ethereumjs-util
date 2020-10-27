@@ -1,4 +1,4 @@
-[ethereumjs-util](../README.md) › ["account"](../modules/_account_.md) › [AccountData](_account_.accountdata.md)
+[fourtwentyjs-util](../README.md) › ["account"](../modules/_account_.md) › [AccountData](_account_.accountdata.md)
 
 # Interface: AccountData
 
@@ -21,7 +21,7 @@
 
 • **balance**? : *[BNLike](../modules/_types_.md#bnlike)*
 
-*Defined in [account.ts:20](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/account.ts#L20)*
+*Defined in [account.ts:20](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/account.ts#L20)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **codeHash**? : *[BufferLike](../modules/_types_.md#bufferlike)*
 
-*Defined in [account.ts:22](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/account.ts#L22)*
+*Defined in [account.ts:22](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/account.ts#L22)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **nonce**? : *[BNLike](../modules/_types_.md#bnlike)*
 
-*Defined in [account.ts:19](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/account.ts#L19)*
+*Defined in [account.ts:19](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/account.ts#L19)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **stateRoot**? : *[BufferLike](../modules/_types_.md#bufferlike)*
 
-*Defined in [account.ts:21](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/account.ts#L21)*
+*Defined in [account.ts:21](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/account.ts#L21)*
