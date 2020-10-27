@@ -1,4 +1,4 @@
-/// <reference path="./@types/ethjs-util/index.ts"/>
+/// <reference path="./@types/fourtwozerojs-util/index.ts"/>
 /**
  * Constants
  */
@@ -45,6 +45,6 @@ export * from './externals'
 export * from './types'
 
 /**
- * Export ethjs-util methods
+ * Export fourtwozerojs-util methods
  */
-export * from 'ethjs-util'
+export * from 'fourtwozerojs-util'
