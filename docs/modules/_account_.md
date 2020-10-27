@@ -1,4 +1,4 @@
-[ethereumjs-util](../README.md) › ["account"](_account_.md)
+[fourtwentyjs-util](../README.md) › ["account"](_account_.md)
 
 # Module: "account"
 
@@ -38,7 +38,7 @@
 
 • **publicToAddress**: *pubToAddress* = pubToAddress
 
-*Defined in [account.ts:258](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/account.ts#L258)*
+*Defined in [account.ts:258](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/account.ts#L258)*
 
 ## Functions
 
@@ -46,7 +46,7 @@
 
 ▸ **generateAddress**(`from`: Buffer, `nonce`: Buffer): *Buffer*
 
-*Defined in [account.ts:180](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/account.ts#L180)*
+*Defined in [account.ts:180](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/account.ts#L180)*
 
 Generates an address of a newly created contract.
 
@@ -65,7 +65,7 @@ ___
 
 ▸ **generateAddress2**(`from`: Buffer, `salt`: Buffer, `initCode`: Buffer): *Buffer*
 
-*Defined in [account.ts:201](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/account.ts#L201)*
+*Defined in [account.ts:201](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/account.ts#L201)*
 
 Generates an address for a contract created using CREATE2.
 
@@ -85,9 +85,9 @@ ___
 
 ▸ **importPublic**(`publicKey`: Buffer): *Buffer*
 
-*Defined in [account.ts:281](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/account.ts#L281)*
+*Defined in [account.ts:281](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/account.ts#L281)*
 
-Converts a public key to the Ethereum format.
+Converts a public key to the 420coin format.
 
 **Parameters:**
 
@@ -103,7 +103,7 @@ ___
 
 ▸ **isValidAddress**(`hexAddress`: string): *boolean*
 
-*Defined in [account.ts:128](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/account.ts#L128)*
+*Defined in [account.ts:128](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/account.ts#L128)*
 
 Checks if the address is a valid. Accepts checksummed addresses too.
 
@@ -121,7 +121,7 @@ ___
 
 ▸ **isValidChecksumAddress**(`hexAddress`: string, `eip1191ChainId?`: undefined | number): *boolean*
 
-*Defined in [account.ts:168](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/account.ts#L168)*
+*Defined in [account.ts:168](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/account.ts#L168)*
 
 Checks if the address is a valid checksummed address.
 
@@ -142,7 +142,7 @@ ___
 
 ▸ **isValidPrivate**(`privateKey`: Buffer): *boolean*
 
-*Defined in [account.ts:219](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/account.ts#L219)*
+*Defined in [account.ts:219](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/account.ts#L219)*
 
 Checks if the private key satisfies the rules of the curve secp256k1.
 
@@ -160,10 +160,10 @@ ___
 
 ▸ **isValidPublic**(`publicKey`: Buffer, `sanitize`: boolean): *boolean*
 
-*Defined in [account.ts:229](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/account.ts#L229)*
+*Defined in [account.ts:229](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/account.ts#L229)*
 
 Checks if the public key satisfies the rules of the curve secp256k1
-and the requirements of Ethereum.
+and the requirements of 420coin.
 
 **Parameters:**
 
@@ -180,7 +180,7 @@ ___
 
 ▸ **isZeroAddress**(`hexAddress`: string): *boolean*
 
-*Defined in [account.ts:301](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/account.ts#L301)*
+*Defined in [account.ts:301](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/account.ts#L301)*
 
 Checks if a given address is the zero address.
 
@@ -198,9 +198,9 @@ ___
 
 ▸ **privateToAddress**(`privateKey`: Buffer): *Buffer*
 
-*Defined in [account.ts:264](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/account.ts#L264)*
+*Defined in [account.ts:264](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/account.ts#L264)*
 
-Returns the ethereum address of a given private key.
+Returns the 420coin address of a given private key.
 
 **Parameters:**
 
@@ -216,9 +216,9 @@ ___
 
 ▸ **privateToPublic**(`privateKey`: Buffer): *Buffer*
 
-*Defined in [account.ts:272](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/account.ts#L272)*
+*Defined in [account.ts:272](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/account.ts#L272)*
 
-Returns the ethereum public key of a given private key.
+Returns the 420coin public key of a given private key.
 
 **Parameters:**
 
@@ -234,10 +234,10 @@ ___
 
 ▸ **pubToAddress**(`pubKey`: Buffer, `sanitize`: boolean): *Buffer*
 
-*Defined in [account.ts:249](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/account.ts#L249)*
+*Defined in [account.ts:249](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/account.ts#L249)*
 
-Returns the ethereum address of a given public key.
-Accepts "Ethereum public keys" and SEC1 encoded keys.
+Returns the 420coin address of a given public key.
+Accepts "420coin public keys" and SEC1 encoded keys.
 
 **Parameters:**
 
@@ -254,7 +254,7 @@ ___
 
 ▸ **toChecksumAddress**(`hexAddress`: string, `eip1191ChainId?`: undefined | number): *string*
 
-*Defined in [account.ts:143](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/account.ts#L143)*
+*Defined in [account.ts:143](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/account.ts#L143)*
 
 Returns a checksummed address.
 
@@ -262,8 +262,7 @@ If a eip1191ChainId is provided, the chainId will be included in the checksum ca
 has the effect of checksummed addresses for one chain having invalid checksums for others.
 For more details see [EIP-1191](https://eips.ethereum.org/EIPS/eip-1191).
 
-WARNING: Checksums with and without the chainId will differ. As of 2019-06-26, the most commonly
-used variation in Ethereum was without the chainId. This may change in the future.
+WARNING: Checksums with and without the chainId will differ. 
 
 **Parameters:**
 
@@ -280,7 +279,7 @@ ___
 
 ▸ **zeroAddress**(): *string*
 
-*Defined in [account.ts:292](https://github.com/ethereumjs/ethereumjs-util/blob/master/src/account.ts#L292)*
+*Defined in [account.ts:292](https://github.com/420integrated/fourtwentyjs-util/blob/master/src/account.ts#L292)*
 
 Returns the zero address.
 
