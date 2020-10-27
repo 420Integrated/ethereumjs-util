@@ -74,8 +74,8 @@ describe('External rlp export', () => {
   })
 })
 
-describe('External ethjsUtil export', () => {
-  it('should have all ethjsUtil methods', () => {
+describe('External fourtwozerojsUtil export', () => {
+  it('should have all fourtwozerojsUtil methods', () => {
     const expected = [
       'arrayContainsArray',
       'toBuffer',
@@ -98,7 +98,7 @@ describe('External ethjsUtil export', () => {
     })
   })
 
-  it('should use ethjsUtil functions correctly', () => {
+  it('should use fourtwozerojsUtil functions correctly', () => {
     // should convert intToHex
     assert.equal(src.intToHex(new src.BN(0).toNumber()), '0x0')
 
