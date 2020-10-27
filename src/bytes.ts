@@ -1,5 +1,5 @@
 import * as BN from 'bn.js'
-import { intToBuffer, stripHexPrefix, padToEven, isHexString, isHexPrefixed } from 'ethjs-util'
+import { intToBuffer, stripHexPrefix, padToEven, isHexString, isHexPrefixed } from 'fourtwozerojs-util'
 import { TransformableToArray, TransformableToBuffer } from './types'
 import { assertIsBuffer, assertIsArray, assertIsHexString } from './helpers'
 
