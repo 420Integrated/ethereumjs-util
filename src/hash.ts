@@ -1,6 +1,6 @@
-const { keccak224, keccak384, keccak256: k256, keccak512 } = require('ethereum-cryptography/keccak')
+const { keccak224, keccak384, keccak256: k256, keccak512 } = require('fourtwenty-cryptography/keccak')
 const createHash = require('create-hash')
-import * as ethjsUtil from 'ethjs-util'
+import * as fourtwozerojsUtil from 'fourtwozerojs-util'
 import * as rlp from 'rlp'
 import { toBuffer, setLengthLeft } from './bytes'
 import { assertIsString, assertIsBuffer, assertIsArray, assertIsHexString } from './helpers'
