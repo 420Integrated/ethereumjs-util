@@ -1,4 +1,4 @@
-declare module 'ethjs-util' {
+declare module 'fourtwozerojs-util' {
   /**
    * @description Returns a `Boolean` on whether or not the a `String` starts with '0x'
    */
